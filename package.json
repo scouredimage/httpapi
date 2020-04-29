@@ -1,0 +1,14 @@
+{
+  "name": "httpapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

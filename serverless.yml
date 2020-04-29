@@ -1,0 +1,27 @@
+service: httpapi
+app: demoapp
+tenant: scouredimage
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /hello/to/{name}
+          method: GET
+  goodbye:
+    handler: handler.goodbye
+    events:
+      - httpApi:
+          path: /goodbye/to/{name}
+          method: POST
+  aloha:
+    handler: handler.aloha
+    events:
+      - httpApi:
+          path: /aloha/{name}
+          method: GET
