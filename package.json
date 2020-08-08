@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "exit 0"
+    "test": "echo $A_TEST_ENV_VAR"
   },
   "keywords": [],
   "author": "",
