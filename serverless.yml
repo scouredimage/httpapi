@@ -9,8 +9,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    environment:
-      BUILD_ENV: "${env:}"
     events:
       - httpApi:
           path: /hello/to/{name}
