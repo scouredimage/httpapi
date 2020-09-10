@@ -3,11 +3,15 @@
 module.exports.hello = async event => {
   console.log(JSON.stringify(event))
   const { pathParameters: { name } } = event
+  const buidEnv = {}
+  if (name === 'ollie') {
+    buildEnv = process.env.BUILD_ENV
+  }
   return {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: `Hello, ${name}!`,
+        message: `Hello, ${name}! - ${JSON.stringify(buildEnv)}`,
       },
       null,
       2
