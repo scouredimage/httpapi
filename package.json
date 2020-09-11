@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "export",
-    "pre-install": "echo pre-install",
-    "post-install": "echo post-install",
+    "preinstall": "echo preinstall",
+    "postinstall": "echo postinstall",
     "hook:before:package:initialize": "echo hook"
   },
   "keywords": [],
