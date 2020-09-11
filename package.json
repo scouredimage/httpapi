@@ -4,9 +4,14 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "serverless-hooks": "^1.0.0"
+  },
   "scripts": {
-    "test": "export"
+    "test": "export",
+    "pre-install": "echo pre-install",
+    "post-install": "echo post-install",
+    "hook:before:package:initialize": "echo hook"
   },
   "keywords": [],
   "author": "",
