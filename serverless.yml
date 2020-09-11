@@ -6,6 +6,10 @@ provider:
   name: aws
   runtime: nodejs12.x
 
+custom:
+  serverless-hooks:
+    hookPrefix: hook
+
 plugins:
   - serverless-hooks
 
